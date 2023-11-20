@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVR Framework</title>
+  </head>
+  <body>
+
+    <nav>
+      <p class="brand">SVR Framework</p>
+      <ul>
+        <li><a href="#wiki">Wiki</a> </li>
+        <li><a href="#documentation">Documentation</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <pre class="mermaid">
+        %%{init: {'theme':'neutral'}}%%
+          graph LR
+          A[Client] --> B[Load Balancer] 
+          B --> C[Server1] 
+          B --> D[Server2]
+      </pre>
+     </div>
+   
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
