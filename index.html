@@ -19,10 +19,16 @@
     <div class="content">
       <pre class="mermaid">
         %%{init: {'theme':'neutral'}}%%
-          graph LR
-          A[Client] --> B[Load Balancer] 
+          graph TD
+          Title[SVRFramework] --> B[Load Balancer] 
+          Title --> Attributes[Attributes]
+          Title --> AudioCoreLogic[AudioCoreLogic]
+          Title --> AudioPrefabs[AudioPrefabs]
           B --> C[Server1] 
           B --> D[Server2]
+
+          click Title href "https://www.nu.nl" "Click to view"
+          click AudioPrefabs href "https://www.google.com" "Go to wiki"
       </pre>
      </div>
    
