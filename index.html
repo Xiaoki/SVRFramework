@@ -22,7 +22,7 @@
 
           %% Main Categories
           Title[SVRFrameWork] --> Audio[Audio]
-          Title --> Managers[Managers]
+          Title:::mainHeader --> Managers[Managers]
           Title --> Scripts[Scripts]
           Title --> HelpSystem[Help System]
           Title --> Objects[Objects]
@@ -34,57 +34,63 @@
           Title --> UserInterface[User Interface]
 
           %% Audio sub-Category
-          Audio --> AudioCoreLogic
+          Audio:::subCategory --> AudioCoreLogic
           Audio --> AudioPrefabs
           Audio --> AudioSamples
           Audio --> VoiceOverComponents
 
           %% Managers sub-category
-          Managers --> ConfigManager
+          Managers:::subCategory --> ConfigManager
 
           %% Scripts sub-category 
-          Scripts --> EditorCore
+          Scripts:::subCategory --> EditorCore
           Scripts --> UtilitiesCore
           Scripts --> Atribbutes
           Scripts --> VFXToolkit
 
           %% Help sub-category
-          HelpSystem --> HelpSystemComponents
+          HelpSystem:::subCategory --> HelpSystemComponents
           HelpSystem --> HelpSystemLogic
 
           %% Objects sub-category
-          Objects --> InteractablesAR
+          Objects:::subCategory --> InteractablesAR
           Objects --> InteractablesCore
           Objects --> InteractablesVR
           Objects --> PrototypingAssets
           Objects --> VFXPrefabs
 
           %% Media sub-category
-          Media --> MediaCreationToolkit
+          Media:::subCategory --> MediaCreationToolkit
 
           %% ScenarioEditor sub-category
-          ScenarioEditor --> ScenarioEditorToolkit
+          ScenarioEditor:::subCategory --> ScenarioEditorToolkit
           ScenarioEditor --> ScenarioFlowCore
           ScenarioEditor --> ScenarioFlowStandardActions
 
           %% Data sub-category
-          Data --> ScriptableObjectsLogic
+          Data:::subCategory --> ScriptableObjectsLogic
           Data --> ScriptableObjectsPackage
 
           %% General sub-category
-          General --> SeriousVRAppFoundation
+          General:::subCategory --> SeriousVRAppFoundation
           General --> TranslationToolkit
           General --> WebRequestToolkit
 
           %% TPA sub-category
-          TPA --> TPAComponents
+          TPA:::subCategory --> TPAComponents
 
           %% UI sub-category
-          UserInterface --> UISystemCore
+          UserInterface:::subCategory --> UISystemCore
 
 
           %% click Title href "https://www.nu.nl" "Click to view"
           click AudioPrefabs href "https://www.google.com" "Go to wiki"
+
+
+          %% Class Style definitions
+          classDef mainHeader fill:#ce5e1d, stroke:#FFF, stroke-width:4px, padding:25px, font-size: 1.5em, color: #FFF
+          classDef subCategory fill:#ebd4c0, stroke:#ce5e1d, stroke-width:4px, padding: 25px, font-size: 1.5em, color:#ce5e1d ;
+
     </div>
      <script type="module" src="/svg-pan-zoom.min.js"></script>
     <script type="module" src="/main.js"></script>
