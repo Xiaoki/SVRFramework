@@ -18,42 +18,39 @@
 
     <div class="content">
       %%{init: {'theme':'neutral'}}%%
-          graph LR
-      
-          Title[SVRFramework] --> Attributes[Attributes]
-          Title --> AudioCoreLogic[AudioCoreLogic]
-          Title --> AudioPrefabs[AudioPrefabs]
-          Title --> AudioSamples[AudioSamples]
-          Title --> ConfigManager[ConfigManager]
-          Title --> EditorCore[EditorCore]
-          Title --> HelpSystemComponents[HelpSystemComponents]
-          Title --> HelpSystemLogic[HelpSystemLogic]
-          Title --> InteractablesAR[InteractablesAR]
-          Title --> InteractablesCore[InteractablesCore]
-          Title --> InteractablesVR[InteractablesVR]
-          Title --> LightingToolkit[LightingToolkit]
-          Title --> MediaCreationToolkit[MediaCreationToolkit]
-          Title --> PrototypingAssets[PrototypingAssets]
-          Title --> ScenarioEditorToolkit[ScenarioEditorToolkit]
-          Title --> ScenarioFlowCore[ScenarioFlowCore]
-          Title --> ScenarioFlowStandardActions[ScenarioFlowStandardActions]
-          Title --> ScriptableObjectsLogic[ScriptableObjectsLogic]
-          Title --> ScriptableObjectsPackage[ScriptableObjectsPackage]
-          Title --> SeriousVRAppFoundation[SeriousVRAppFoundation]
-          Title --> TPAComponents[TPAComponents]
-          Title --> TranslationToolkit[TranslationToolkit]
-          Title --> UISystemCore[UISystemCore]
-          Title --> UtilitiesCore[UtilitiesCore]
-          Title --> VFXPrefabs[VFXPrefabs]
-          Title --> VFXToolkit[VFXToolkit]
-          Title --> VoiceOverComponents[VoiceOverComponents]
-          Title --> WebRequestToolkit[WebRequestToolkit]
+          graph TD
 
-          Attributes --> Nieuw[Nieuw Test]
+          %% Main Categories
+          Title[SVRFrameWork] --> Audio[Audio]
+          Title --> Managers[Managers]
+          Title --> Scripts[Scripts]
+          Title --> HelpSystem[Help System]
+          Title --> Objects[Objects]
+          Title --> Lights[Lights]
+          Title --> Media[Media]
+          Title --> ScenearioEditor[Scenario Editor]
+          Title --> Data[Data]
+          Title --> General[General]
+          Title --> TPA[TPA]
+          Title --> UserInterface[User Interface]
+          Title --> Testing[Testing]
 
-    
+          %% Audio sub-Category
+          Audio --> AudioCoreLogic
+          Audio --> AudioPrefabs
+          Audio --> AudioSamples
+          Audio --> VoiceOverComponents
 
-          click Title href "https://www.nu.nl" "Click to view"
+          %% Managers sub-category
+          Managers --> ConfigManager
+
+          %% Scripts sub-category 
+          Scripts --> EditorCore
+          Scripts --> UtilitiesCore
+          Scripts --> Atribbutes
+
+
+          %% click Title href "https://www.nu.nl" "Click to view"
           click AudioPrefabs href "https://www.google.com" "Go to wiki"
     </div>
      <script type="module" src="/svg-pan-zoom.min.js"></script>
