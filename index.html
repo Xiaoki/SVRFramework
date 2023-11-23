@@ -16,10 +16,17 @@
       </ul>
     </nav>
 
-    <div class="content">
-      %%{init: {'theme':'neutral'}}%%
-          graph TD
+    <div class="content">   
+        
+      graph TD
 
+        %%{init:{
+          'flowchart':{'nodeSpacing': 100, 'rankSpacing': 500}, 
+          'theme':'dark',
+          'themeVariables': {'lineColor': '#a18c7c'} 
+        }}%%
+
+        
           %% Main Categories
           Title[SVRFrameWork] --> Audio[Audio]
           Title:::mainHeader --> Managers[Managers]
