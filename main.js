@@ -23,7 +23,7 @@ const drawDiagram = async () => {
 
   var panAndZoom= svgPanZoom("svg", {
     zoomEnabled: true,
-    controlIconsEnabled: true,
+    controlIconsEnabled: false,
     fit: true,
     center: true,
     zoomScaleSensitivity: 0.7
