@@ -12,7 +12,7 @@
       <p class="brand">SVR Framework</p>
       <ul>
         <li><a href="#wiki">Wiki</a> </li>
-        <li><a href="#documentation">Documentation</a></li>
+        <li><a href="#documentation">Instructions</a></li>
       </ul>
     </nav>
   
@@ -28,7 +28,8 @@
         }}%%
 
         
-          %% Main Categories
+          %% Main Categories    ------------------------------------------------------------------
+
           Title[SVRFrameWork] --> Audio[Audio]
           Title:::mainHeader --> Managers[Managers]
           Title --> Scripts[Scripts]
@@ -40,6 +41,10 @@
           Title --> General[General]
           Title --> TPA[TPA]
           Title --> UserInterface[User Interface]
+          Title --> Extensions[Extensions]
+
+
+          %% SubCategories ------------------------------------------------------------------
 
           %% Audio sub-Category
           Audio:::subCategory --> AudioCoreLogic
@@ -81,7 +86,7 @@
 
           %% General sub-category
           General:::subCategory --> SeriousVRAppFoundation
-          General --> TranslationToolkit
+          General --> TranslationToolkit:::help
           General --> WebRequestToolkit
 
           %% TPA sub-category
@@ -90,14 +95,63 @@
           %% UI sub-category
           UserInterface:::subCategory --> UISystemCore
 
+          %% Extensions sub-category
+          Extensions:::subCategory --> CurvedUI
 
-          click Title href "https://www.nu.nl" "Click to view"
-          %% click AudioPrefabs href "https://www.google.com" "Go to wiki"
+          %% Packages Content ------------------------------------------------------------------
+          
+          InteractablesVR ---Attacher
+          InteractablesVR ---RaycastPlacableInstance[GrabRaycastPlacableInstance]
+          InteractablesVR ---Grabable
+          InteractablesVR ---PushButton[PushButton]
+          InteractablesVR ---Rotatable
 
 
-          %% Class Style definitions
+
+          %% Weblinks -------------------------------------------------------------------------
+
+          %% Audio Weblinks
+          click Title href "#" "Click to view" _blank
+          click AudioCoreLogic "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/Audio-Core-Logic-Package-Manual" _blank
+          click AudioPrefabs "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/audio-prefabs-package-manual" _blank
+          click AudioSamples "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/audio-samples-package-manual" _blank
+          click VoiceOverComponents "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/Voice-Over-Components-Package-Manual" _blank
+
+          %%  Scrips Weblinks
+          click EditorCore "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/editore-core-package-manual" _blank
+
+          %% Extensions Weblinks
+          click Extensions "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/extensions" _blank
+
+          %% Help System Weblinks
+          click HelpSystemComponents "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/Help-System-Components" _blank
+
+          %% Scripts Weblinks
+          click InteractablesCore "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/Interactables-Core" _blank
+          click InteractablesVR "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/interactables-vr-package" _blank
+
+          %% ScenarioEditor Weblinks
+          click ScenarioFlowCore "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/Scenario-Flow-Core-Package-Manual" _blank
+          click ScenarioFlowStandardActions "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/Scenario-Flow-Standard-Actions" _blank
+
+          %% Data Weblinks
+          click ScriptableObjectsLogic "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/scriptable-objects-logic-package-manual" _blank
+          click ScriptableObjectsPackage "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/scriptable-objects-package-manual" _blank
+
+          %% User Interface Weblinks
+          click UISystemCore "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/ui-system-core-package-manual" _blank
+
+          %% General Weblinks
+          click SeriousVRAppFoundation "http://wiki.int.serious-vr.com/Manuals/Production/Framework/SeriousVR-App-Foundation" _blank
+          
+          %% Media Weblinks
+          click MediaCreationToolkit "https://jenkins.int.serious-vr.com/job/MediaCreationToolkit/Documentation/" _blank
+          
+          %% Class Style definitions ----------------------------------------------------------
+
           classDef mainHeader fill:#ce5e1d, stroke:#FFF, stroke-width:4px, padding:25px, font-size: 1.5em, color: #FFF
-          classDef subCategory fill:#ebd4c0, stroke:#ce5e1d, stroke-width:4px, padding: 25px, font-size: 1.5em, color:#ce5e1d ;
+          classDef subCategory fill:#ebd4c0, stroke:#ce5e1d, stroke-width:4px, padding: 25px, font-size: 1.5em, color:#ce5e1d 
+          classDef help stroke:#d45950;
 
     </div>
      <script type="module" src="/svg-pan-zoom.min.js"></script>
