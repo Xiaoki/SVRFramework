@@ -2,10 +2,6 @@
 import './style.css'
 import mermaid from 'mermaid'
 
-
-
-const content = ""
-
 mermaid.initialize({
   startOnLoad: false,
   flowchart: {

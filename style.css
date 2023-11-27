@@ -48,6 +48,7 @@ Nav{
   height: 75px;
   width: 100%; 
   background-color: #ce5e1d;
+  z-index:1001;
 }
 
 Nav ul{
@@ -70,12 +71,30 @@ Nav li a {
   /*background-color: cornflowerblue;*/
   /*justify-content: center;*/
   /* width: 100vw;*/
-  height: 100%; 
+  height: 100%;
+  z-index:1001;
 }
 
 
 .content svg {
   width: 100%;
   height: 99%;
+}
+
+.popup{
+  display: block;
+  position: absolute;
+  top: 150px;
+  width: 80%;
+  height: 80%;
+  background-color: #ce5e1d;
+  z-index: 1002
+}
+
+.popup button{
+  display: none;;
+  float: right;
+  height: 50px;
+  padding: 10px;
 }
 
