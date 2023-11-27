@@ -25,8 +25,32 @@ const drawDiagram = async () => {
     zoomScaleSensitivity: 0.7
   })
 
-
-
 }
 
 await drawDiagram();
+
+const hideButtonElement = (e) => {
+  console.log(e.srcElement)
+  e.srcElement.parentElement.style.display = "none";
+  
+};
+
+const showPopup = (e) => {
+  //document.getElementsByClassName("popup").style.display = "block";
+  console.log(document.querySelector(".popup"));
+  document.querySelector(".popup").style.display = "block";
+}
+
+const hideButton = document.getElementById("hideBtn");
+hideButton.addEventListener("click", hideButtonElement);
+
+document.getElementById("documentation").addEventListener("click", showPopup)
+
+
+
+
+
+
+// Add hide function on button
+//const buttonElement = document.getElementById("hideBtn");
+////buttonElement.addEventListener("click", testHide());

@@ -81,8 +81,8 @@ Nav li a {
   height: 99%;
 }
 
-.popup{
-  display: block;
+.popup {
+  display: none;
   position: absolute;
   top: 150px;
   width: 80%;
@@ -92,7 +92,7 @@ Nav li a {
 }
 
 .popup button{
-  display: none;;
+  
   float: right;
   height: 50px;
   padding: 10px;
