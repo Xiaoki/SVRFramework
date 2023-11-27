@@ -32,73 +32,73 @@
 
       %% Main Categories    ------------------------------------------------------------------
 
-      Title[SVRFrameWork] --> Audio[Audio]
-      Title:::mainHeader --> Managers[Managers]
-      Title --> Scripts[Scripts]
-      Title --> HelpSystem[Help System]
-      Title --> Objects[Objects]
-      Title --> Media[Media]
-      Title --> ScenarioEditor[Scenario Editor]
-      Title --> Data[Data]
-      Title --> General[General]
-      Title --> TPA[TPA]
-      Title --> UserInterface[User Interface]
-      Title --> Extensions[Extensions]
+      Title[SVRFrameWork] ---Audio[Audio]
+      Title:::mainHeader ---Managers[Managers]
+      Title ---Scripts[Scripts]
+      Title ---HelpSystem[Help System]
+      Title ---Objects[Objects]
+      Title ---Media[Media]
+      Title ---ScenarioEditor[Scenario Editor]
+      Title ---Data[Data]
+      Title ---General[General]
+      Title ---TPA[TPA]
+      Title ---UserInterface[User Interface]
+      Title ---Extensions[Extensions]
 
 
       %% SubCategories ------------------------------------------------------------------
       
       %% Audio sub-Category
-      Audio:::subCategory --> AudioCoreLogic
-      Audio --> AudioPrefabs
-      Audio --> AudioSamples
-      Audio --> VoiceOverComponents
+      Audio:::subCategory ---AudioCoreLogic
+      Audio ---AudioPrefabs
+      Audio ---AudioSamples
+      Audio ---VoiceOverComponents
 
       %% Managers sub-category
-      Managers:::subCategory --> ConfigManager
+      Managers:::subCategory ---ConfigManager
 
       %% Scripts sub-category
-      Scripts:::subCategory --> EditorCore
-      Scripts --> UtilitiesCore
-      Scripts --> Atribbutes
-      Scripts --> VFXToolkit
+      Scripts:::subCategory ---EditorCore
+      Scripts ---UtilitiesCore
+      Scripts ---Atribbutes
+      Scripts ---VFXToolkit
 
       %% Help sub-category
-      HelpSystem:::subCategory --> HelpSystemComponents
-      HelpSystem --> HelpSystemLogic
+      HelpSystem:::subCategory ---HelpSystemComponents
+      HelpSystem ---HelpSystemLogic
 
       %% Objects sub-category
-      Objects:::subCategory --> InteractablesAR
-      Objects --> InteractablesCore
-      Objects --> InteractablesVR
-      Objects --> PrototypingAssets
-      Objects --> VFXPrefabs
+      Objects:::subCategory ---InteractablesAR
+      Objects ---InteractablesCore
+      Objects ---InteractablesVR
+      Objects ---PrototypingAssets
+      Objects ---VFXPrefabs
 
       %% Media sub-category
-      Media:::subCategory --> MediaCreationToolkit
+      Media:::subCategory ---MediaCreationToolkit
 
       %% ScenarioEditor sub-category
-      ScenarioEditor:::subCategory --> ScenarioEditorToolkit
-      ScenarioEditor --> ScenarioFlowCore
-      ScenarioEditor --> ScenarioFlowStandardActions
+      ScenarioEditor:::subCategory ---ScenarioEditorToolkit
+      ScenarioEditor ---ScenarioFlowCore
+      ScenarioEditor ---ScenarioFlowStandardActions
 
       %% Data sub-category
-      Data:::subCategory --> ScriptableObjectsLogic
-      Data --> ScriptableObjectsPackage
+      Data:::subCategory ---ScriptableObjectsLogic
+      Data ---ScriptableObjectsPackage
 
       %% General sub-category
-      General:::subCategory --> SeriousVRAppFoundation
-      General --> TranslationToolkit:::help
-      General --> WebRequestToolkit
+      General:::subCategory ---SeriousVRAppFoundation
+      General ---TranslationToolkit:::help
+      General ---WebRequestToolkit
 
       %% TPA sub-category
-      TPA:::subCategory --> TPAComponents
+      TPA:::subCategory ---TPAComponents
 
       %% UI sub-category
-      UserInterface:::subCategory --> UISystemCore
+      UserInterface:::subCategory ---UISystemCore
 
       %% Extensions sub-category
-      Extensions:::subCategory --> CurvedUI
+      Extensions:::subCategory ---CurvedUI
 
       %% Packages Content ------------------------------------------------------------------
       
@@ -107,6 +107,19 @@
       InteractablesVR ---Grabable
       InteractablesVR ---PushButton[PushButton]
       InteractablesVR ---Rotatable
+      InteractablesVR ---ObjectResetter
+      InteractablesVR ---RecorderManager
+      InteractablesVR ---XROrigin[XR Origin]
+      InteractablesVR ---Socket
+
+      VFXPrefabs ---RayCastDecalPlacer
+      VFXPrefabs ---FireExtinguisher
+
+      MediaCreationToolkit ---Action 
+      MediaCreationToolkit ---Manager
+      MediaCreationToolkit ---ToolkitSettings
+
+
 
 
 

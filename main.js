@@ -30,14 +30,13 @@ const drawDiagram = async () => {
 await drawDiagram();
 
 const hideButtonElement = (e) => {
-  console.log(e.srcElement)
+
   e.srcElement.parentElement.style.display = "none";
   
 };
 
 const showPopup = (e) => {
-  //document.getElementsByClassName("popup").style.display = "block";
-  console.log(document.querySelector(".popup"));
+
   document.querySelector(".popup").style.display = "block";
 }
 
