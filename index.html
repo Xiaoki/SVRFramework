@@ -9,7 +9,12 @@
   <body>
 
     <nav>
-      <p class="brand">SVR Framework</p>
+      <div class="brand">
+        <img src="./public/SVR.Logo.png">
+        <a href="#">SVR Framework</a>
+      </div>
+      
+      <!--<p class="brand"><a href="#">SVR Framework</a></p>-->
       <ul>
         <li><a href="#wiki">Wiki</a> </li>
         <li><a id="documentation" href="#documentation">Instructions</a></li>
@@ -25,8 +30,8 @@
 
       %%{init:{
       'flowchart':{'nodeSpacing': 50, 'rankSpacing': 500},
-      'theme':'dark',
-      'themeVariables': {'lineColor': '#a18c7c'}
+      'theme':'base',
+      'themeVariables': {'lineColor': '#a18c7c', 'primaryColor': '#e4f0f0'}
       }}%%
 
 
@@ -164,7 +169,7 @@
 
       %% Class Style definitions ----------------------------------------------------------
 
-      classDef mainHeader fill:#ce5e1d, stroke:#FFF, stroke-width:4px, padding:25px, font-size: 1.5em, color: #FFF
+      classDef mainHeader fill:#FFFFFf, stroke:#ce5e1d, stroke-width:2px, padding:25px, font-size: 1.5em, color: #ce5e1d
       classDef subCategory fill:#ebd4c0, stroke:#ce5e1d, stroke-width:4px, padding: 25px, font-size: 1.5em, color:#ce5e1d
       classDef help stroke:#d45950;
 
