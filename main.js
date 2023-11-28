@@ -4,6 +4,7 @@ import mermaid from 'mermaid'
 
 mermaid.initialize({
   startOnLoad: false,
+  securityLevel: 'loose',
   flowchart: {
     useMaxWidth: false,
     htmlLabels: true,
@@ -37,7 +38,7 @@ const hideButtonElement = (e) => {
 
 const showPopup = (e) => {
 
-  document.querySelector(".popup").style.display = "block";
+  document.querySelector(".popup").style.display = "flex";
 }
 
 const hideButton = document.getElementById("hideBtn");
