@@ -30,7 +30,7 @@
       graph TD
 
       %%{init:{
-      'flowchart':{'nodeSpacing': 50, 'rankSpacing': 500},
+      'flowchart':{'nodeSpacing': 50, 'rankSpacing': 200},
       'theme':'base',
       'themeVariables': {'lineColor': '#bfbfbf', 'primaryColor': '#fff'}
       }}%%
@@ -39,7 +39,7 @@
 
       %% Main Categories    ------------------------------------------------------------------
 
-      Title[SVRFrameWork] ---Audio[Audio]
+      Title((SVRFrameWork)) ---Audio[Audio]
       Title:::mainHeader ---Managers[Managers]
       Title ---Scripts[Scripts]
       Title ---HelpSystem[Help System]
@@ -58,7 +58,6 @@
       %% Audio sub-Category
       Audio:::subCategory ---AudioCoreLogic
       Audio ---AudioPrefabs
-      Audio ---AudioSamples
       Audio ---VoiceOverComponents
 
       %% Managers sub-category
@@ -72,7 +71,6 @@
 
       %% Help sub-category
       HelpSystem:::subCategory ---HelpSystemComponents
-      HelpSystem ---HelpSystemLogic
 
       %% Objects sub-category
       Objects:::subCategory ---InteractablesAR
@@ -109,31 +107,192 @@
 
       %% Packages Content ------------------------------------------------------------------
       
-      InteractablesVR ---Attacher
-      InteractablesVR ---RaycastPlacableInstance[GrabRaycastPlacableInstance]
-      InteractablesVR ---Grabable
-      InteractablesVR ---PushButton[PushButton]
-      InteractablesVR ---Rotatable
-      InteractablesVR ---ObjectResetter
-      InteractablesVR ---RecorderManager
-      InteractablesVR ---XROrigin[XR Origin]
-      InteractablesVR ---Socket
+      InteractablesVR ---InteractablesVRList[
+      Attacher
+      RaycastPlacableInstance
+      Grabable
+      PushButton
+      Rotatable
+      ObjectResetter
+      RecorderManager
+      XROrigin
+      Socket
+      ]:::infolijst
 
-      VFXPrefabs ---RayCastDecalPlacer
-      VFXPrefabs ---FireExtinguisher
+      ConfigManager ---ConfigManagerList[
+      Config
+      ConfigManager
+      ]:::infolijst
 
-      MediaCreationToolkit ---Action 
-      MediaCreationToolkit ---Manager
-      MediaCreationToolkit ---ToolkitSettings
+      VFXPrefabs ---VFXPrefabsList[
+      RayCastDecalPlacer
+      FireExtinguisher
+      ]:::infolijst
+
+      MediaCreationToolkit ---MediaCreationToolkistList[
+      Action 
+      Manager
+      ToolkitSettings
+      ]:::infolijst
+
+      AudioCoreLogic ---AudioCoreLogicList[  
+      AudioManager
+      AudioFade
+      AudioClipData
+      AudioClipPlayer
+      SnapshotTransitionManager
+      AudioManagerEditor
+      AudioClipDataDrawer
+      ]:::infolijst
+
+      AudioPrefabs ---AudioPrefabsList[
+      AudioReverbZone
+      AudioSource
+      AudioMixer
+      ]:::infolijst
+
+      EditorCore ---EditorCoreList[
+      FoldRestorer
+      FrameworkDrawer
+      FrameWorkEditor
+      ReorderableListEditor
+      ]:::infolijst
+      
+
+      UtilitiesCore ---UtilitiesCoreList[
+      AppHelper
+      CollisionToEventTranslatorEditor
+      CollisionToEventTranslator
+      EventManager
+      ExtensionMethods
+      Follow
+      LookAt
+      MoveToRandomTransformLocation
+      OnLoadUnityEvent
+      SceneLoadManager
+      ScreenFade
+      SendRandomUnityEvent
+      Teleport
+      TransformCopier
+      UtilitiesCoreHelper
+      UtilityObject
+      WaitSecondsUnityEvent
+      CollisionToEventTranslatorEditor
+      EditorExtensionMethods
+      TransformCopierEditor
+      UnityEventToolsHelper
+      ]:::infolijst
+
+      Atribbutes ---AtribbutesList[
+      FoldOutAttribute
+      HelpAttribute
+      HideIfBoolAttribute
+      HideifFalseAttribute
+      HideIfNotValueAttribute
+      HideIfTrueAttribute
+      HideIfZeroAttribute
+      ReadOnlyAttribute
+      SingleUnityLayer
+      UnityLayerAttribute
+      ]:::infolijst
+
+      HelpSystemComponents ---HelpSystemComponentsList[
+      Component
+      GhostCreator
+      Ghosting
+      GhostMover
+      GhostRenderer
+      Highlighter
+      LeanTweenAnimator
+      AnimationPreset
+      OutlineRenderer
+      ]:::infolijst
+
+      PrototypingAssets ---PrototypingAssetsList[
+      Walls
+      Floors
+      Pillars
+      Windows
+      Doors
+      ]:::infolijst
 
 
+      ScenarioEditorToolkit ---ScenarioEditorToolkitList[
+      ScenariEditorActionProperties
+      ScenarioEditorEntityProperties
+      ScenarioEditorHelpActionProperties
+      ScenarioEditorProperties
+      InteractionMakers
+      EntityMakers
+      Importer
+      Mapper
+      RestClient
+      ScenearioEditor
+      Scenewindow
+      SettingsWindow
+      SetupWindow
+      Validator
+      VoiceOverWindow
+      InteractionMakerManager
+      ScenarioEditorEntityTypeMap
+      HelpActionCreator
+      Finder
+      Paths
+      ]:::infolijst
+
+      ScenarioFlowStandardActions ---ScenarioFlowStandardActionsList[
+        AudioAction
+        BasicAction
+        WaitAction
+        MenuManager
+  
+      ]:::infolijst
+
+      ScenarioFlowCore ---ScenarioFlowCoreList[
+        ActionEditor
+        ActionManagerEditor
+        ActionManagerFixer
+        ActionDataDrawer
+        ActionManager
+        ActionManagerAction
+        HelpManager
+        Action
+      ]:::infolijst
+
+      ScriptableObjectsLogic ---ScriptableObjectsLogicList[
+        baseValidator
+        GameObjectToBaseVariableEvent
+        VariableContainer
+        GameObjectToGenericVariableEvent
+        GenericVariableContainer
+        GenericVariableValidator
+        GameObjectToIntVariableEvent
+        IntValidator
+        IntvariableContainer
+        BoolValidator
+        ConditionChecker
+        ConditionManager
+        ConditionValidator
+        EventPattern
+        FloatCalculator
+        FloatValidator
+        ImageFillSetter
+        IntervalGenerator
+        MaterialColorSetter
+        MaterialTexztureSetter
+        ModelMaterialSetter
+        StringValidator
+        StringValidatorTimespanCalculator
+        UITextSetter
+        QuickTriggerEvent
+      ]:::infolijst
 
 
 
       %% Weblinks -------------------------------------------------------------------------
 
       %% Audio Weblinks
-      click Title href "#" "Click to view" _blank
+      click Title "#" "Click to view" _blank
       click AudioCoreLogic "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/Audio-Core-Logic-Package-Manual" _blank
       click AudioPrefabs "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/audio-prefabs-package-manual" _blank
       click AudioSamples "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/audio-samples-package-manual" _blank
@@ -171,9 +330,10 @@
 
       %% Class Style definitions ----------------------------------------------------------
 
-      classDef mainHeader fill:#FFFFFf, stroke:#ce5e1d, stroke-width:2px, padding:25px, font-size: 1.5em, color: #ce5e1d
+      classDef mainHeader fill:#FFFFFf, stroke:#ce5e1d, stroke-width:4px, padding:25px, font-size: 1.5em, color: #ce5e1d
       classDef subCategory fill:#ffffff, stroke:#ce5e1d, stroke-width:2px, padding: 25px, font-size: 1.5em, color:#ce5e1d
       classDef help stroke:#d45950;
+      classDef infolijst fill:ffffff, line-height: 35px, padding: 35px, float:left
 
     </div>
      <script type="module" src="/svg-pan-zoom.min.js"></script>
