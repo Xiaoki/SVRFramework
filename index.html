@@ -74,7 +74,6 @@
 
       %% Objects sub-category
       Objects:::subCategory ---InteractablesAR
-      Objects ---InteractablesCore
       Objects ---InteractablesVR
       Objects ---PrototypingAssets
       Objects ---VFXPrefabs
@@ -93,7 +92,7 @@
 
       %% General sub-category
       General:::subCategory ---SeriousVRAppFoundation
-      General ---TranslationToolkit:::help
+      General ---TranslationToolkit
       General ---WebRequestToolkit
 
       %% TPA sub-category
@@ -101,9 +100,6 @@
 
       %% UI sub-category
       UserInterface:::subCategory ---UISystemCore
-
-      %% Extensions sub-category
-      Extensions:::subCategory ---CurvedUI
 
       %% Packages Content ------------------------------------------------------------------
       
@@ -287,6 +283,50 @@
         QuickTriggerEvent
       ]:::infolijst
 
+      ScriptableObjectsPackage ---ScriptableObjectsPackageList[
+        GameEventListener
+        Events
+        Attributes
+        BaseClasses
+        Variables
+        V2 Types
+      ]:::infolijst
+      
+
+    SeriousVRAppFoundation ---SeriousVRAppFoundationList[
+      Keyboard
+      Button Key
+      UI Ray InteractablesCore
+    ]:::infolijst
+
+    TranslationToolkit ---TranslationToolkitList[
+      HubDetector
+      LanguageSelector
+      UILanguageLoader
+      UILanguageVisualizer
+    ]:::infolijst
+
+    WebRequestToolkit ---WebRequestToolkitList[
+      SimpleJSON
+      RestClient
+      RSGPromise
+    ]:::infolijst
+
+    TPAComponents ---TPAComponentsList[
+      Authentication
+      KeyboardManager
+      SendingModule
+      TPAC
+      Login Scene
+    ]:::infolijst
+
+    UISystemCore ---UISystemCoreList[
+      UI input Mapper
+      CurvedUI Extension
+      UI Titles
+      UI Info Windows
+      UI base design
+    ]:::infolijst
 
 
       %% Weblinks -------------------------------------------------------------------------
