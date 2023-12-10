@@ -3,7 +3,7 @@ import './style.css'
 import mermaid from 'mermaid'
 
 mermaid.initialize({
-  startOnLoad: false,
+  startOnLoad: true,
   securityLevel: 'loose',
   flowchart: {
     useMaxWidth: false,
@@ -28,7 +28,11 @@ const drawDiagram = async () => {
 
 }
 
-await drawDiagram();
+window.addEventListener("load", (e) => {
+  drawDiagram()
+})
+
+//await drawDiagram();
 
 const hideButtonElement = (e) => {
 
